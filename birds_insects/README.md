@@ -10,6 +10,6 @@ I make my notes in a file 'observations.csv', it looks like this:
 
 There is an example file in this folder called 'observations.csv'
 
-I have a database structure with two tables. The 'wildlife' table contains a row for each kind of insect or bird I observe in my garden. The 'observations' table contains a row for each observation. (One for each row in the spreadsheet).
+I have a database structure with two tables. The 'wildlife' table contains a row for each kind of insect or bird I observe in my garden. The 'observations' table contains a row for each observation. (One for each row in the spreadsheet). There is a file 'empty_db.sql' which can create an empty database with the right schema.
 
 Write tests for the load_observations.py program that reads the spreadsheet and updates the database.
