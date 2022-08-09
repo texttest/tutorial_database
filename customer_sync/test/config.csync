@@ -7,6 +7,3 @@ filename_convention_scheme:standard
 # Expanded name to use for application
 full_name:Customer Sync
 
-copy_test_path:incoming.json
-copy_test_path:empty_db.sql
-copy_test_path:db_tables
