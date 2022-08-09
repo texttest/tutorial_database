@@ -17,7 +17,7 @@ def main():
         load_observations.main(connection_string)
 
         # Assert
-        db.dumptables("birds", "*", exclude="trace*", usemaxcol="")
+        db.dumptables("dbtext", "*", exclude="trace*", usemaxcol="")
 
 if __name__ == "__main__":
     main()

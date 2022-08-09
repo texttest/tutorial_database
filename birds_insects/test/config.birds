@@ -12,4 +12,9 @@ copy_test_path:observations.csv
 copy_test_path:empty_db.sql
 copy_test_path:db_tables
 
+create_catalogues:true
 
+[collate_file]
+wildlife:db_wildlife.dbtext
+observations:db_observations.dbtext
+[end]

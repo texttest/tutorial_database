@@ -29,6 +29,10 @@ def main(connection_string):
 				name = row['name']
 				stmt = select(Wildlife).filter_by(name=name, type=type)
 				results = session.execute(stmt).scalars().all()
+				if not results:
+					wildlife = Wildlife(name=name, type=type)
+					session.add(wildlife)
+					results = [wildlife]
 				for result in results:
 					observation = Observation(date=date, wildlife=result)
 					session.add(observation)
