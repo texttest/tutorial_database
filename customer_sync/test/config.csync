@@ -10,3 +10,10 @@ full_name:Customer Sync
 copy_test_path:incoming.json
 copy_test_path:empty_db.sql
 copy_test_path:db_tables
+
+[collate_file]
+customers:db_customers.dbtext
+addresses:db_addresses.dbtext
+customer_shoppinglists:db_customer_shoppinglists.dbtext
+shopping_lists:db_shoppinglists.dbtext
+[end]

@@ -30,7 +30,7 @@ def main():
             print(f"ConflictException: {e}")
 
         # Assert
-        db.dumptables("csync", "*", exclude="trace*", usemaxcol="")
+        db.dumptables("dbtext", "*", exclude="trace*", usemaxcol="")
 
 if __name__ == "__main__":
     main()
