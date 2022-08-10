@@ -10,7 +10,7 @@ CREATE TABLE wildlife (
 
 CREATE TABLE observations (
     internalId        INT IDENTITY(1,1),
-    date         DATETIME,
+    date         DATE,
     wildlifeId   INT,
     PRIMARY KEY (internalId),
     FOREIGN KEY (wildlifeId) REFERENCES wildlife(internalId)
