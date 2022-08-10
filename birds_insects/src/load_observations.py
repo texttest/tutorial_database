@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import csv
+import datetime
 
 from sqlalchemy import create_engine, select
 from sqlalchemy.engine import URL
@@ -34,7 +35,8 @@ def main(connection_string):
 					session.add(wildlife)
 					results = [wildlife]
 				for result in results:
-					observation = Observation(date=date, wildlife=result)
+					isodate = datetime.date.fromisoformat(date)
+					observation = Observation(date=isodate, wildlife=result)
 					session.add(observation)
 		session.commit()
 
