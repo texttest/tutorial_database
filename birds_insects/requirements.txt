@@ -1,1 +1,3 @@
 sqlalchemy
+dbtext>=2.0.2
+pyodbc
